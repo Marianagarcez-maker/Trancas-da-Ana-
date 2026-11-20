@@ -557,53 +557,53 @@ nav a.ativo {
   stroke-linejoin: round;
 }
 .rodape {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 30px 8%;
-    background-color: #2b1016;
-    color: #f6e7dc;
+    padding: 35px 8%;
+    border-top: 1px solid rgba(233, 170, 160, 0.3);
 }
 
 .rodape-logo h2 {
     color: #e9aaa0;
     font-family: Georgia, serif;
-    font-size: 28px;
+    font-size: 32px;
     font-style: italic;
     font-weight: normal;
+    margin-bottom: 4px;
 }
 
 .rodape-logo span {
+    color: #f6e7dc;
     font-size: 10px;
     letter-spacing: 3px;
 }
 
 .rodape-frase {
-    text-align: center;
+    color: #f6e7dc;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .rodape-links {
     display: flex;
-    gap: 25px;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .rodape-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     color: #f6e7dc;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
+    font-size: 12px;
 }
 
-.rodape-links a:hover {
-    color: #e9aaa0;
-}
-
-@media (max-width: 768px) {
-    .rodape {
-        flex-direction: column;
-        text-align: center;
-    }
+.rodape-links svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #e9aaa0;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
