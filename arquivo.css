@@ -607,3 +607,15 @@ nav a.ativo {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+
+.rodape,
+.rodape p,
+.rodape h2,
+.rodape span {
+    color: #f6e7dc;
+}
+
+.rodape-logo h2,
+.rodape-logo span {
+    color: #e9aaa0;
+}
