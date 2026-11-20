@@ -556,3 +556,54 @@ nav a.ativo {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 8%;
+    background-color: #2b1016;
+    color: #f6e7dc;
+}
+
+.rodape-logo h2 {
+    color: #e9aaa0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.rodape-logo span {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.rodape-frase {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.rodape-links {
+    display: flex;
+    gap: 25px;
+}
+
+.rodape-links a {
+    color: #f6e7dc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.rodape-links a:hover {
+    color: #e9aaa0;
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+}
