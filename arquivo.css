@@ -202,7 +202,7 @@ nav a.ativo {
     /* camada escura por cima da foto + a foto de fundo */
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("topo.jpeg") center / cover no-repeat;
+        url("Imagens/topo.jpg") center / cover no-repeat;
 }
 
 .inicio .conteudo {
