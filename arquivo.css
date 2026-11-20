@@ -1,0 +1,558 @@
+/*feito por Nathali -> -------------------------------- */
+
+  /* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #321419;
+}
+
+/* CORES DO SITE */
+:root {
+    --vinho: #2b1016;
+    --marrom: #4a2925;
+    --rose: #e9aaa0;
+    --bege: #f6e7dc;
+}
+
+/* MENU */
+.cabecalho {
+    width: 100%;
+    height: 85px;
+    background-color: var(--vinho);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    position: relative;
+    z-index: 2;
+}
+
+.logo h1 {
+    color: var(--rose);
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.logo span {
+    color: var(--bege);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: var(--bege);
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: var(--rose);
+    border-bottom: 2px solid var(--rose);
+}
+
+.inicio {
+    background-image: url("imagens/modelo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+
+/* DESTAQUE PRINCIPAL */
+.inicio {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(43, 16, 22, 0.95) 0%,
+            rgba(43, 16, 22, 0.80) 35%,
+            rgba(43, 16, 22, 0.05) 75%
+        ),
+        url("modelo-elas-amam.png");
+
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+}
+
+/* TEXTOS */
+.conteudo {
+    max-width: 480px;
+    color: var(--bege);
+    z-index: 1;
+}
+
+.subtitulo {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--rose);
+}
+
+.conteudo h2 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.05;
+    font-weight: normal;
+    margin: 18px 0;
+}
+
+.conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+.botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 25px;
+    background-color: var(--rose);
+    color: var(--vinho);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--bege);
+    transform: translateY(-3px);
+}
+
+.botao span {
+    font-size: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .inicio {
+        min-height: 600px;
+        padding: 40px 7%;
+        background-position: 65% center;
+    }
+
+    .conteudo {
+        max-width: 100%;
+    }
+
+    .conteudo h2 {
+        font-size: 38px;
+    }
+
+    .conteudo p {
+        font-size: 14px;
+    }
+}
+.inicio {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+
+    /* camada escura por cima da foto + a foto de fundo */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("topo.jpeg") center / cover no-repeat;
+}
+
+.inicio .conteudo {
+    max-width: 600px;
+    color: #fff;
+}
+
+.inicio h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+/*feito por Nathali -> -------------------------------- */
+
+
+/*feito por Mariana -> -------------------------------- */
+
+.sobre-mim {
+  background-color: #f6eee8;
+  padding: 60px 20px;
+}
+
+.sobre-conteiner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.prazer {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #c0806f;
+  margin: 0 0 10px;
+}
+
+.impacto {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+  color: #2b1220;
+  margin: 0 0 18px;
+}
+
+.resumo {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3a2a30;
+  max-width: 380px;
+}
+
+.sobre-divisor {
+  width: 1px;
+  height: 160px;
+  background: #d9b3a6;
+}
+
+.sobre-destaques {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sobre-destaques li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.sobre-destaques .icone {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border: 1.5px solid #d9a898;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-destaques .icone svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: #c0806f;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sobre-destaques strong {
+  display: block;
+  font-size: 14px;
+  color: #2b1220;
+}
+
+.sobre-destaques span {
+  display: block;
+  font-size: 13px;
+  color: #5a4a50;
+}
+
+@media (max-width: 800px) {
+  .sobre-conteiner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sobre-divisor {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+/*feito por Mariana -> -------------------------------- */
+
+
+/*feito por Nathali (Sessão Serviços) -> -------------------------------- */
+
+.servicos {
+  background-color: #f4dfd8;
+  padding: 55px 8%;
+  text-align: center;
+}
+
+/* CABEÇALHO */
+.cabecalho-servicos span {
+  color: #a77c76;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.cabecalho-servicos h2 {
+  color: #382326;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.cabecalho-servicos p {
+  color: #493b39;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* GALERIA */
+.galeria-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD: a foto fica de fundo */
+.card {
+  position: relative;
+  height: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #382326;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(80, 45, 40, 0.25);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 1;
+  transition: transform 0.4s;
+}
+
+.card:hover img {
+  transform: scale(1.06);
+}
+
+/* NOME DA TRANÇA: por cima da foto, em destaque */
+.descricao {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 70px 16px 20px;
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.55) 55%,
+    rgba(0, 0, 0, 0)
+  );
+}   
+.descricao h3 {
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 4px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.descricao p {
+  color: #f4dfd8;
+  font-size: 13px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .galeria-servicos { grid-template-columns: repeat(2, 1fr); }
+  .cabecalho-servicos h2 { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+  .galeria-servicos { grid-template-columns: 1fr; }
+  .card { height: 300px; }
+}
+
+/*feito por Mariana -> -------------------------------- */
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #2b1016;
+  color: #f6e7dc;
+}
+
+.form-lado {
+  padding: 60px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #e9aaa0;
+  margin-bottom: 10px;
+}
+
+.form-lado h2 {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+
+.form-lado p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.form-garantias {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.form-garantias li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+  gap: 6px;
+}
+
+.form-garantias span {
+  font-size: 12px;
+}
+
+.form-caixa {
+  background-color: #f9efec;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-caixa label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2b1016;
+  margin-top: 8px;
+}
+
+.form-caixa input,
+.form-caixa select,
+.form-caixa textarea {
+  padding: 10px 12px;
+  border: 1px solid #e0c9c2;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.form-caixa textarea {
+  resize: vertical;
+}
+
+.form-caixa button {
+  margin-top: 16px;
+  padding: 13px;
+  background-color: #2b1016;
+  color: #f6e7dc;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-caixa button:hover {
+  background-color: #4a2925;
+}
+
+.form-caixa small {
+  font-size: 10px;
+  color: #7a6a66;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+}
+.form-garantias svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: #e9aaa0;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
